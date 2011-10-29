@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Santa's Media Queries | Mozilla Dev Derby</title>
+        <style type="text/css">
+            body {
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                background-color: black;
+            }
+            #family {
+                background-image: url(images/1.jpg);
+                height: 768px;
+                margin: auto;
+                width: 1024px;
+                border: 2px solid white;
+            }
+            @media screen and (max-width: 1000px) {
+                #family {
+                    background-image: url(images/1.jpg);
+                }
+            }
+            @media screen and (max-width: 950px) {
+                #family {
+                    background-image: url(images/2.jpg);
+                }
+            }
+            @media screen and (max-width: 900px) {
+                #family {
+                    background-image: url(images/3.jpg);
+                }
+            }
+            @media screen and (max-width: 850px) {
+                #family {
+                    background-image: url(images/4.jpg);
+                }
+            }
+            @media screen and (max-width: 800px) {
+                #family {
+                    background-image: url(images/5.jpg);
+                }
+            }
+            @media screen and (max-width: 750px) {
+                #family {
+                    background-image: url(images/6.jpg);
+                }
+            }
+            #cache {
+                display: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="family"></div>
+        <div id="cache">
+            <img src="images/6.jpg">
+            <img src="images/5.jpg">
+            <img src="images/4.jpg">
+            <img src="images/3.jpg">
+            <img src="images/2.jpg">
+            <img src="images/1.jpg">
+        </div>
+    </body>
+</html>
